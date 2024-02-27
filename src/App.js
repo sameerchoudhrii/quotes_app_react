@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+import axios1 from 'axios';
 
 import './App.css';
 
@@ -11,7 +11,7 @@ class App extends React.Component {
     }
 
     fetchAdvice = () => {
-        axios.get('https://api.adviceslip.com/advice')
+        axios1.get('https://api.adviceslip.com/advice')
         .then ((response) => {
 
             const { advice } = response.data.slip;
